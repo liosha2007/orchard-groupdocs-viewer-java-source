@@ -45,7 +45,6 @@ namespace GroupDocsViewerJava.Models
             set { Record.Height = value; }
         }
 
-        [Required]
         [DisplayName("Default file name")]
         public string DefaultFileName
         {

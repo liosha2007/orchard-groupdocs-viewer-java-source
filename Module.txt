@@ -1,10 +1,10 @@
-﻿Name: GroupDocsViewerJava
+﻿Name: GroupDocs Viewer Java
 AntiForgery: enabled
-Author: The Orchard Team
-Website: http://orchardproject.net
-Version: 1.0
-OrchardVersion: 1.0
-Description: Description for the module
+Author: Marketplace team
+Website: http://groupdocs.com
+Version: 1.0.0
+OrchardVersion: 1.7.2.0
+Description: GroupDocs Viewer for Java
 Features:
     GroupDocsViewerJava:
-        Description: Description for feature GroupDocsViewerJava.
+        Description: GroupDocs Viewer for Java
