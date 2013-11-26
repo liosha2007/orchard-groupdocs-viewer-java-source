@@ -6,13 +6,14 @@ using Orchard.ContentManagement.MetaData;
 using Orchard.ContentManagement.MetaData.Builders;
 using Orchard.Core.Contents.Extensions;
 using Orchard.Data.Migration;
+using GroupDocsViewerJava.Models;
 
 namespace GroupDocsViewerJava {
     public class Migrations : DataMigrationImpl {
 
         public int Create() {
 			// Creating table GroupDocsViewerJavaRecord
-			SchemaBuilder.CreateTable("GroupDocsViewerJavaRecord", table => table
+			SchemaBuilder.CreateTable(typeof(GroupDocsViewerJavaRecord).Name, table => table
 				.ContentPartRecord()
 				.Column("Url", DbType.String)
 				.Column("Width", DbType.String)
@@ -21,7 +22,8 @@ namespace GroupDocsViewerJava {
 				.Column("UseHttpHandlers", DbType.Boolean)
 			);
 
-
+            ContentDefinitionManager.AlterPartDefinition(
+                typeof(GroupDocsViewerJavaPart).Name, cfg => cfg.Attachable());
 
             return 1;
         }

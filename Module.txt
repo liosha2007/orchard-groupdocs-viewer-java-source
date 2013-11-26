@@ -8,3 +8,4 @@ Description: GroupDocs Viewer for Java
 Features:
     GroupDocsViewerJava:
         Description: GroupDocs Viewer for Java
+        Category: Groupdocs
