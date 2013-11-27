@@ -13,14 +13,14 @@
         @Html.LabelFor(model => model.Width)
     </div>
     <div class="editor-field">
-        @Html.TextBoxFor(model => model.Width) @Html.ValidationMessageFor(model => model.Width)
+        @Html.TextBoxFor(model => model.Width, new { value="100%" }) @Html.ValidationMessageFor(model => model.Width)
     </div>
 
     <div class="editor-label">
         @Html.LabelFor(model => model.Height)
     </div>
     <div class="editor-field">
-        @Html.TextBoxFor(model => model.Height) @Html.ValidationMessageFor(model => model.Height)
+        @Html.TextBoxFor(model => model.Height, new { value="600px" }) @Html.ValidationMessageFor(model => model.Height)
     </div>
 
     <div class="editor-label">
@@ -34,7 +34,7 @@
         @Html.LabelFor(model => model.UseHttpHandlers)
     </div>
     <div class="editor-field">
-        @Html.TextBoxFor(model => model.UseHttpHandlers) @Html.ValidationMessageFor(model => model.UseHttpHandlers)
+        @Html.CheckBoxFor(model => model.UseHttpHandlers, new { value="true" }) @Html.ValidationMessageFor(model => model.UseHttpHandlers)
     </div>
 
 </fieldset>

@@ -8,10 +8,11 @@ using System.Web;
 
 namespace GroupDocsViewerJava.Handlers
 {
-    public class GroupDocsViewerJavaHandler : ContentHandler {
+    public class GroupDocsViewerJavaHandler : ContentHandler
+    {
         public GroupDocsViewerJavaHandler(IRepository<GroupDocsViewerJavaRecord> repository)
         {
-      Filters.Add(StorageFilter.For(repository));
+            Filters.Add(StorageFilter.For(repository));
+        }
     }
-  }
 }

@@ -6,7 +6,7 @@ using System.Security;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GroupDocsViewerJava")]
+[assembly: AssemblyTitle("GroupdocsViewerJava")]
 [assembly: AssemblyDescription("GroupDocs Viewer for Java")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyProduct("Orchard")]

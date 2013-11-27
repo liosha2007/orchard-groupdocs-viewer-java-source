@@ -1,9 +1,9 @@
 ﻿Name: GroupDocs Viewer Java
 AntiForgery: enabled
-Author: Marketplace team
+Author: GroupDocs Marketplace
 Website: http://groupdocs.com
 Version: 1.0.0
-OrchardVersion: 1.7.2.0
+OrchardVersion: 1.0
 Description: GroupDocs Viewer for Java
 Features:
     GroupDocsViewerJava:

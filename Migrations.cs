@@ -15,11 +15,11 @@ namespace GroupDocsViewerJava {
 			// Creating table GroupDocsViewerJavaRecord
 			SchemaBuilder.CreateTable(typeof(GroupDocsViewerJavaRecord).Name, table => table
 				.ContentPartRecord()
-				.Column("Url", DbType.String)
-				.Column("Width", DbType.String)
-				.Column("Height", DbType.String)
-				.Column("DefaultFileName", DbType.String)
-				.Column("UseHttpHandlers", DbType.Boolean)
+                .Column<string>("Url", column => column.WithLength(256))
+                .Column<string>("Width", column => column.WithLength(10))
+                .Column<string>("Height", column => column.WithLength(10))
+                .Column<string>("DefaultFileName", column => column.WithLength(256))
+                .Column<bool>("UseHttpHandlers", column => column.WithDefault(true))
 			);
 
             ContentDefinitionManager.AlterPartDefinition(

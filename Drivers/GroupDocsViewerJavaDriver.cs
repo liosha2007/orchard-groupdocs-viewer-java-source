@@ -16,10 +16,10 @@ namespace GroupDocsViewerJava.Drivers
             return ContentShape("Parts_GroupDocsViewerJava",
                 () => shapeHelper.Parts_GroupDocsViewerJava(
                     Url: part.Url,
-                    Width: part.Width,
-                    Height: part.Height,
+                    Width: part.Width == null || part.Width.Length == 0 ? "100%" : part.Width,
+                    Height: part.Height == null || part.Height.Length == 0 ? "600px" : part.Height,
                     DefaultFileName: part.DefaultFileName,
-                    UseHttpHandlers: part.UseHttpHandlers
+                    UseHttpHandlers: part.UseHttpHandlers == null ? true : part.UseHttpHandlers
                     ));
         }
 

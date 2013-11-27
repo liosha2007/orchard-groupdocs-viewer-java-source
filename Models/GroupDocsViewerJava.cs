@@ -11,10 +11,10 @@ namespace GroupDocsViewerJava.Models
 {
     public class GroupDocsViewerJavaRecord : ContentPartRecord
     {
-        public virtual string Url { get; set; }
-        public virtual string Width { get; set; }
-        public virtual string Height { get; set; }
-        public virtual string DefaultFileName { get; set; }
+        public virtual String Url { get; set; }
+        public virtual String Width { get; set; }
+        public virtual String Height { get; set; }
+        public virtual String DefaultFileName { get; set; }
         public virtual bool UseHttpHandlers { get; set; }
     }
 
@@ -23,7 +23,7 @@ namespace GroupDocsViewerJava.Models
 
         [Required]
         [DisplayName("Viewer Url")]
-        public string Url
+        public String Url
         {
             get { return Record.Url; }
             set { Record.Url = value; }
@@ -31,7 +31,7 @@ namespace GroupDocsViewerJava.Models
 
         [Required]
         [DisplayName("Viewer Width")]
-        public string Width
+        public String Width
         {
             get { return Record.Width; }
             set { Record.Width = value; }
@@ -39,14 +39,14 @@ namespace GroupDocsViewerJava.Models
 
         [Required]
         [DisplayName("Viewer Height")]
-        public string Height
+        public String Height
         {
             get { return Record.Height; }
             set { Record.Height = value; }
         }
 
         [DisplayName("Default file name")]
-        public string DefaultFileName
+        public String DefaultFileName
         {
             get { return Record.DefaultFileName; }
             set { Record.DefaultFileName = value; }
