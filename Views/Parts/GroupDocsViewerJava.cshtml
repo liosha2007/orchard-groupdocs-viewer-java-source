@@ -14,15 +14,15 @@
 </script>
 <script type="text/javascript" src="@Model.Url/assets/js/installableViewer.min.js"></script>
 <script type="text/javascript">
-    $.fn.groupdocsViewer.prototype.applicationPath = '@Model.Url/';
+    $.ui.groupdocsViewer.prototype.applicationPath = '@Model.Url/';
 </script>
     @if (Model.UseHttpHandlers) {
         <script type="text/javascript">
-            $.fn.groupdocsViewer.prototype.useHttpHandlers = true;
+            $.ui.groupdocsViewer.prototype.useHttpHandlers = true;
         </script>
     } else {
         <script type="text/javascript">
-            $.fn.groupdocsViewer.prototype.useHttpHandlers = false;
+            $.ui.groupdocsViewer.prototype.useHttpHandlers = false;
         </script>
     };
 <script type="text/javascript" src="@Model.Url/assets/js/GroupdocsViewer.all.min.js"></script>
